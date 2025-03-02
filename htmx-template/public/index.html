@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Template</title>
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+    <style>
+        .card-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            width: 200px;
+            height: 240px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px #ccc; 
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        header
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Exemplo de HTMX</h1>
+    <p>De cada vez que um botão é clicado, é feito um pedido assincrono a <code>/api/clicked</code> que responde com os conteúdos de cada um dos cartões.</p>
+</header>
+<div class="card-container">
+    <div class="card">
+        <button hx-get="./api/clicked" hx-swap="outerHTML">
+            Clica aqui
+          </button>
+    </div>
+    <div class="card">
+        <button hx-get="./api/clicked" hx-swap="outerHTML">
+            Clica aqui
+          </button>
+    </div>
+    <div class="card">
+        <button hx-get="./api/clicked" hx-swap="outerHTML">
+            Clica aqui
+          </button>
+    </div>
+    <div class="card">
+        <button hx-get="./api/clicked" hx-swap="outerHTML">
+            Clica aqui
+          </button>
+    </div>
+</div>
+
+
+</body>
+</html>
