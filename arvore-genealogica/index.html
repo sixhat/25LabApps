@@ -1,17 +1,36 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A minha família</title>
-    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.4"
+        integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+        crossorigin="anonymous"></script>
+        <style>
+            div {
+                background-color: #f9f9f9;
+                padding: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            div:hover {
+                background-color: #f0f0f0;
+            }
+            #main {
+                background-color: #f0f0f0;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
 </head>
-<body>
-    <h1 id="main">Família de David S. Rodrigues</h1>
 
-    <div 
-        hx-get="/bio/pai.html" hx-swap="outerHTML"
-        hx-target="#main"
-        >
+<body>
+    <div id="main">
+        <h1>Família de David S. Rodrigues</h1>
+    </div>
+
+    <div hx-get="/bio/pai.html" hx-swap="innerHTML" hx-target="#main">
         Pai
     </div>
 
@@ -23,4 +42,5 @@
         Filho
     </div>
 </body>
+
 </html>
