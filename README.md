@@ -4,7 +4,7 @@
 
 ## Pastas
 
-**arvore-genealogica** - template de base para construir uma aplicação com HTMX+CSS
+[**arvore-genealogica**](https://sixhat.github.io/25LabApps/arvore-genealogica/) - template de base para construir uma aplicação com HTMX+CSS
 
 **my-app** - exemplo passo a passo de como construir uma aplicação com ExpressJS+EJS, Tailwind e HTMX.
 
