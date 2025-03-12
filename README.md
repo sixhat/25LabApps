@@ -10,7 +10,7 @@
 
 **htmx-template** - template básico de uma app feita com htmx.
 
-**htmx_indicator** - exemplo do funcionamento do htmx_indicator com tailwind e daisy ui.
+[**htmx_indicator**](https://sixhat.github.io/25LabApps/htmx_indicator/) - exemplo do funcionamento do htmx_indicator com tailwind e daisy ui.
 
 ## Slides
 
