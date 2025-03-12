@@ -14,14 +14,16 @@
     <header>
         <h1 class="text-4xl text-center m-3">HTMX Loading Indicators</h1>
     </header>
-    <main class="px-8">
+    <main class="px-8 w-7/12 m-auto">
         <div id="conteudo" class="bg-white rounded-box shadow-xl p-4"></div>
-        <button class="btn btn-primary" hx-target="#conteudo"
+        <div class="text-right">
+            <button class="btn btn-primary" hx-target="#conteudo"
             hx-get="./data.html" 
             hx-indicator="#loading" 
             hx-swap="beforeend">
             Click To Load Data
         </button>
+    </div>
         <span id="loading" class="htmx-indicator text-pink-500 text-4xl"> ( Loading ... )</span>
         <article class=" rounded-box shadow-xl p-4 bg-white mt-4">
             <p class="">O atributo hx-indicator do htmx é utilizado para mostrar um indicador visual enquanto um pedio AJAX está a ser executado.</p>
@@ -32,7 +34,7 @@
             <p class="">Este exemplo utiliza o <a class="text-blue-600" href="https://htmx.org/">HTMX</a> para a parte de interação, o <a class="text-blue-600" href="https://tailwindcss.com/">Tailwind</a> para definir os estilos e <a class="text-blue-600" href="https://daisyui.com/">Daisy UI</a> para utilizar componentes baseados em Tailwind.</p>
         </article>
     </main>
-    <footer class="footer px-8 py-10">
+    <footer class="footer px-8 py-10 w-7/12 m-auto">
         <p>&copy; David Sousa-Rodrigues</p>
     </footer>
 </body>
