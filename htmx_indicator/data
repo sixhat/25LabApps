@@ -1,0 +1,15 @@
+<div>
+    <h1 class="text-4xl">DATA DATA DATA</h1>
+
+    <p>Lot's of DATA. We can even run JavaScript here.</p>
+
+    <div>
+        <button onclick="writeDate(this)" class='m-4 bg-blue-400 p-2 rounded hover:bg-blue-200'>click me</button>
+    </div>
+
+    <script>
+        function writeDate(el = this) {
+            el.innerHTML = new Date().toLocaleString();
+        }
+    </script>
+</div>
