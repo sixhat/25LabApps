@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>HTMX Indicators Demo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/1.9.10/htmx.min.js"></script>
 </head>
 
@@ -17,25 +18,30 @@
     <main class="px-8 w-7/12 m-auto">
         <div id="conteudo" class="bg-white rounded-box shadow-xl p-4"></div>
         <div class="text-right">
-            <button class="btn btn-primary" hx-target="#conteudo"
-            hx-get="./data.html" 
-            hx-indicator="#loading" 
-            hx-swap="beforeend">
-            Click To Load Data
-        </button>
-    </div>
+            <button class="btn btn-primary btn-soft" hx-target="#conteudo" hx-get="./data.html" hx-indicator="#loading"
+                hx-swap="beforeend">
+                Click To Load Data
+            </button>
+        </div>
         <span id="loading" class="htmx-indicator text-pink-500 text-4xl"> ( Loading ... )</span>
         <article class=" rounded-box shadow-xl p-4 bg-white mt-4">
-            <p class="">O atributo hx-indicator do htmx é utilizado para mostrar um indicador visual enquanto um pedio AJAX está a ser executado.</p>
-            <p class="">Carregue esta página com as Ferramentas de Desenvolvimento do browser abertas e simule uma ligação lenta no separador Network/Rede para ver melhor o Indicador em funcionamento.</p>
+            <p class="">O atributo hx-indicator do htmx é utilizado para mostrar um indicador visual enquanto um pedio
+                AJAX está a ser executado.</p>
+            <p class="">Carregue esta página com as Ferramentas de Desenvolvimento do browser abertas e simule uma
+                ligação lenta no separador Network/Rede para ver melhor o Indicador em funcionamento.</p>
             <p class="">Ver o artigo sobre indicators online em <a class="text-blue-600"
-                href="https://htmx.org/attributes/hx-indicator/" class="href">htmx.org/attributes/hx-indicator/</a></p>
+                    href="https://htmx.org/attributes/hx-indicator/" class="href">htmx.org/attributes/hx-indicator/</a>
+            </p>
 
-            <p class="">Este exemplo utiliza o <a class="text-blue-600" href="https://htmx.org/">HTMX</a> para a parte de interação, o <a class="text-blue-600" href="https://tailwindcss.com/">Tailwind</a> para definir os estilos e <a class="text-blue-600" href="https://daisyui.com/">Daisy UI</a> para utilizar componentes baseados em Tailwind.</p>
+            <p class="">Este exemplo utiliza o <a class="text-blue-600" href="https://htmx.org/">HTMX</a> para a parte
+                de interação, o <a class="text-blue-600" href="https://tailwindcss.com/">Tailwind</a> para definir os
+                estilos e <a class="text-blue-600" href="https://daisyui.com/">Daisy UI</a> para utilizar componentes
+                baseados em Tailwind.</p>
         </article>
     </main>
     <footer class="footer px-8 py-10 w-7/12 m-auto">
         <p>&copy; David Sousa-Rodrigues</p>
     </footer>
 </body>
+
 </html>
