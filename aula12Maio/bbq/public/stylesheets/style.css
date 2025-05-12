@@ -33,13 +33,31 @@ a:hover {
 }
 
 button {
-  background-color: #4caf50;
+  background: linear-gradient(45deg, #ff6f61, #ffeb3b, #4caf50, #2196f3, #9c27b0);
+  background-size: 300% 300%;
   color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  animation: psychedelic 3s infinite;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes psychedelic {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 button:hover {
