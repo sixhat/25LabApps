@@ -1,0 +1,106 @@
+/* Breaking Bad Inspired CSS */
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1c1c1c; /* Dark background for a dramatic effect */
+  color: #e3e3e3; /* Light text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Impact', sans-serif;
+  color: #4caf50; /* Green inspired by the Breaking Bad logo */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #81c784; /* Lighter green for hover effect */
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c; /* Darker green for hover effect */
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #4caf50;
+}
+
+footer {
+  background-color: #333;
+  color: #e3e3e3;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 3px solid #4caf50;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #2e2e2e;
+  color: #81c784;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+blockquote {
+  border-left: 4px solid #4caf50;
+  padding-left: 10px;
+  color: #a5d6a7;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #4caf50;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #e3e3e3;
+}
+
+td {
+  background-color: #1c1c1c;
+}

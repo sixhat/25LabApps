@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<blockquote id="quote" hx-get="/quote" hx-trigger="load" hx-swap="innerHTML">
+    Carregando uma citação do Breaking Bad...
+</blockquote>
+<button hx-get="/quote" hx-target="#quote" hx-swap="innerHTML" >
+    Gerar a próxima
+</button>
